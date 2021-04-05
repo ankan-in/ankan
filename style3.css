@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   background-color: aliceblue;
+}
+.hto {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 40px;
+    transition: letter-spacing 0.4s linear ;
+    background-color: rgba(238, 223, 9, 0.418);
+    border: 6px solid black;
+}
+.hto:hover{
+    letter-spacing: 7px;
+}
+.btn {
+    background: none;
+    border: black 2px solid;
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    color: #000;
+    font-size: 30px;
+    height: 50px;
+    width: 262px;
+    padding: 3px 6px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    margin-left: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+    }
+    .btn:hover {
+        color: #fff;
+        letter-spacing: 2px;
+    }
+    .btn::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    background: black;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7) ;
+    transform: scaleX(0);
+    }
+.btn:hover::before {
+    transform: scaleX(1);
+}
+.icons {
+    width: 200px;
+    top: 40%;
+    left: 0%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+   
+}
+.icons a {
+    text-decoration: none;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin: 2px;
+    text-align: right;
+    border-radius: 0px 50px 50px 0px;
+    transform: translate( -140px, 0px);
+    transition: all 0.5s;
+}
+.icons a:hover {
+    transform: translateX(0px);
+}
+.icons a i {
+    margin-left: 35px;
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 40px;
+    font-size: 20px;
+    
+}
+.youtube {
+    background-color: #fa0910;
+    color: #fff;
+}
+.github {
+    background-color: rgb(49, 47, 47);
+    color: white;
+}
+.icons a i.fa-youtube {
+    color: #fa0910;
+}
+
+.icons a i.github {
+    color: rgb(49, 47, 47);
+}
+
+.hone {
+   text-align: center;
+    font-family:'Montserrat', sans-serif;
+}
+
+table , td , th {
+    border: 2px solid black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    text-align: center;
+   
+   margin-left: 500px;
+
+}
